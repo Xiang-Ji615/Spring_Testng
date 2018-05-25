@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Spring_Testng_Bo</groupId>
+	<artifactId>Spring_Testng_Bo</artifactId>
+
+	<parent>
+		<groupId>Spring_Testng_Build</groupId>
+		<artifactId>Spring_Testng_Build</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../Spring_Testng_Build</relativePath>
+	</parent>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>Spring_Testng_Dao</groupId>
+			<artifactId>Spring_Testng_Dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

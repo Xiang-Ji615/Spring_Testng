@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Spring_Testng_Build</groupId>
+	<artifactId>Spring_Testng_Build</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.version>0.0.1</project.version>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.2.RELEASE</version>
+	</parent>
+
+	<modules>
+		<module>../Spring_Testng_Common</module>
+		<module>../Spring_Testng_Dao</module>
+		<module>../Spring_Testng_Bo</module>
+		<module>../Spring_Testng_Test</module>
+	</modules>
+</project>
